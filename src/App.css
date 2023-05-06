@@ -8,11 +8,143 @@
   --comp1: #003d43;
   --comp2: #a43e00;
   --accent: #ffabd8;
+
+  --transition: all 0.3s linear;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
 }
 
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
 .App {
-  height: 110vh;
+  height: 100vh;
   background-color: var(--dom);
   color: var(--comp1);
   font-family: "Cormorant Garamond", serif;
+  display: flex;
+}
+.navbar {
+  background-color: var(--comp1);
+  left: 0px;
+  width: 6rem;
+  margin-right: 2rem;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+a {
+  color: var(--dom);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--accent);
+}
+.toggle {
+  display: none;
+}
+.nav-links {
+  overflow: hidden;
+  margin-top: 4rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .toggle {
+    display: block;
+  }
+  .nav-links {
+    height: 0px !important;
+    margin-top: 0rem;
+    transition: all 0.3s linear;
+  }
+  .nav-links.show {
+    height: 7rem !important;
+  }
+  .links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
 }
