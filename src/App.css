@@ -8,8 +8,10 @@
   --comp1: #003d43;
   --comp2: #a43e00;
   --accent: #ffabd8;
-
   --transition: all 0.3s linear;
+  --webkit-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
+  --moz-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
+  --box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
 }
 ul {
   list-style-type: none;
@@ -21,7 +23,6 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
 }
@@ -36,9 +37,6 @@ h3 {
 }
 h4 {
   font-size: 0.875rem;
-}
-p {
-  color: var(--clr-grey-5);
 }
 
 @media screen and (min-width: 800px) {
@@ -71,14 +69,14 @@ p {
   font-family: "Cormorant Garamond", serif;
   display: flex;
 }
+
+/* -----------------Navbar------------------------------- */
 .navbar {
   background-color: var(--comp1);
-  left: 0px;
-  width: 6rem;
+  width: 3.5 rem;
   margin-right: 2rem;
   padding: 0.7rem;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -87,6 +85,7 @@ p {
   display: none;
 }
 .nav-links {
+  margin-left: -3.2rem;
   overflow: hidden;
   margin-top: 4rem;
   height: 100%;
@@ -110,7 +109,6 @@ p {
   &:hover {
     color: var(--accent);
     .icon {
-      /* opacity: 0; */
       display: none;
     }
     &:after {
@@ -122,10 +120,13 @@ p {
     }
   }
 }
+.active {
+  color: var(--accent);
+}
 @media screen and (max-width: 768px) {
   .App {
     flex-direction: column;
-    position: relative;
+    margin: 0px;
   }
   .navbar {
     position: absolute;
@@ -144,6 +145,7 @@ p {
     display: block;
   }
   .nav-links {
+    margin-left: 0px;
     height: 0px !important;
     margin-top: 0rem;
     transition: all 0.3s linear;
@@ -152,8 +154,104 @@ p {
     height: 3rem !important;
   }
   .links {
+    margin-left: -3.5rem;
     flex-direction: row;
     justify-content: space-around;
     width: 80%;
+    gap: 3rem;
+  }
+}
+
+/* --------------- Home ------------------------ */
+.home {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.home .hero {
+  padding: 1rem;
+  margin-top: 3rem;
+  text-align: left;
+  justify-content: center;
+}
+.home .hero h1 {
+  color: var(--comp2);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+}
+.home .hero h4 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  &::selection {
+    background-color: var(--accent);
+  }
+}
+.home .hero p {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+  &::selection {
+    background-color: var(--accent);
+  }
+}
+.btn-sect {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 2px solid;
+  text-transform: uppercase;
+  color: var(--comp1);
+  z-index: 1;
+  transition: var(--transition);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent);
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .home .hero h1 {
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+  }
+  .home .hero h4 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    margin: 0.2rem;
   }
 }
