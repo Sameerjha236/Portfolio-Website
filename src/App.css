@@ -24,7 +24,6 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
 }
 h1 {
   font-size: 3rem;
@@ -39,7 +38,6 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 
@@ -85,17 +83,6 @@ p {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
-a {
-  color: var(--dom);
-  text-transform: capitalize;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 0.7rem;
-  transition: var(--transition);
-}
-a:hover {
-  color: var(--accent);
-}
 .toggle {
   display: none;
 }
@@ -112,6 +99,28 @@ a:hover {
   flex-direction: column;
   gap: 6rem;
   height: 100%;
+}
+.links a {
+  color: var(--dom);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  &:hover {
+    color: var(--accent);
+    .icon {
+      /* opacity: 0; */
+      display: none;
+    }
+    &:after {
+      content: attr(data-text);
+      display: block;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .App {
@@ -140,7 +149,7 @@ a:hover {
     transition: all 0.3s linear;
   }
   .nav-links.show {
-    height: 7rem !important;
+    height: 3rem !important;
   }
   .links {
     flex-direction: row;
