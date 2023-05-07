@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { RxAvatar } from "react-icons/rx";
 import { FaEnvelope } from "react-icons/fa";
 import { HiRocketLaunch } from "react-icons/hi2";
+
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   const handleToggleClick = () => {
     setShowLinks(!showLinks);
   };
+
   return (
     <nav className="navbar">
       <div className="nav-header">
-        <Link to="/">
+        <NavLink to="/">
           <p className="logo">Sameer Jha</p>
-        </Link>
+        </NavLink>
         <div className="toggle">
           <button className="toggle-btn" onClick={handleToggleClick}>
             Click me
@@ -25,24 +27,24 @@ const Navbar = () => {
       <div className={`nav-links ${showLinks ? "show" : ""}`}>
         <ul className="links">
           <li>
-            <Link to="/" data-text="Home">
+            <NavLink to="/" data-text="Home">
               <BiHomeAlt2 className="icon" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio" data-text="Portfolio">
+            <NavLink to="/portfolio" data-text="Portfolio">
               <HiRocketLaunch className="icon" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" data-text="Contact">
+            <NavLink to="/contact" data-text="Contact">
               <FaEnvelope className="icon" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" data-text="About">
+            <NavLink to="/about" data-text="About">
               <RxAvatar className="icon" />
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
