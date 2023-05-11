@@ -1,5 +1,14 @@
-import React from "react";
-const Portfolio = () => {
+import React, { useEffect } from "react";
+import Loading from "./Loading";
+
+const Portfolio = ({ isLoading, setIsLoading }) => {
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+  if (isLoading) return <Loading />;
   return (
     <div className="portfolio">
       <p>

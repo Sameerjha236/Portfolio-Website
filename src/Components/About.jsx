@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoPython } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
 import profile from "../Assests/sameer-profile.png";
-const About = () => {
+import Loading from "./Loading";
+const About = ({ isLoading, setIsLoading }) => {
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+  if (isLoading) return <Loading />;
   return (
     <div className="about">
       <div className="image-container">

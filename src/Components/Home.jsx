@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Loading from "./Loading";
 import { NavLink } from "react-router-dom";
 import Sameer from ".././Assests/Sameer_Jha_Resume.pdf";
 import Typewriter from "typewriter-effect";
-const Home = () => {
+const Home = ({ isLoading, setIsLoading }) => {
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+  if (isLoading) return <Loading />;
   return (
     <div className="home">
       <div className="hero">
