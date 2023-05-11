@@ -4,7 +4,7 @@ import { BiHomeAlt2 } from "react-icons/bi";
 import { RxAvatar } from "react-icons/rx";
 import { FaEnvelope } from "react-icons/fa";
 import { HiRocketLaunch } from "react-icons/hi2";
-
+import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
@@ -19,9 +19,7 @@ const Navbar = () => {
           <p className="logo">Sameer Jha</p>
         </NavLink>
         <div className="toggle">
-          <button className="toggle-btn" onClick={handleToggleClick}>
-            Click me
-          </button>
+          <FaBars className="toggle-btn" onClick={handleToggleClick} />
         </div>
       </div>
       <div className={`nav-links ${showLinks ? "show" : ""}`}>
@@ -32,6 +30,11 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/about" data-text="About">
+              <RxAvatar className="icon" />
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/portfolio" data-text="Portfolio">
               <HiRocketLaunch className="icon" />
             </NavLink>
@@ -39,11 +42,6 @@ const Navbar = () => {
           <li>
             <NavLink to="/contact" data-text="Contact">
               <FaEnvelope className="icon" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" data-text="About">
-              <RxAvatar className="icon" />
             </NavLink>
           </li>
         </ul>

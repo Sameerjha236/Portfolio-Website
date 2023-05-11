@@ -14,7 +14,7 @@ const Home = () => {
               autoStart: true,
               loop: true,
             }}
-          />{" "}
+          />
         </h1>
         <p>
           A web developer with a passion for creating exceptional websites that
