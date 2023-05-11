@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import Sameer from ".././Assests/Sameer_Jha_Resume.pdf";
 import Typewriter from "typewriter-effect";
 const Home = ({ isLoading, setIsLoading }) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
-  }, []);
+  }, [setIsLoading]);
   if (isLoading) return <Loading />;
   return (
     <div className="home">

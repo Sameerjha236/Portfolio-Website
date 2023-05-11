@@ -6,6 +6,7 @@ import { GrReactjs } from "react-icons/gr";
 import profile from "../Assests/sameer-profile.png";
 import Loading from "./Loading";
 const About = ({ isLoading, setIsLoading }) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
