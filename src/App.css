@@ -64,7 +64,6 @@ h4 {
 }
 .App {
   height: 100%;
-  background-color: var(--dom);
   color: var(--comp1);
   font-family: "Cormorant Garamond", serif;
   display: flex;
@@ -72,7 +71,6 @@ h4 {
 
 /* -----------------Navbar------------------------------- */
 .navbar {
-  background-color: var(--comp1);
   width: 3 rem;
   height: 100%;
   margin-right: 2rem;

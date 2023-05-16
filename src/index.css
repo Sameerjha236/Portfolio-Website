@@ -6,7 +6,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #aeecf3;
+
+  background-image: linear-gradient(
+    to left,
+    #aeecf3,
+    #82bdc4,
+    #589096,
+    #2f656b,
+    #003d43
+  );
 }
 
 code {

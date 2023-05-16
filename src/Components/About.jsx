@@ -12,7 +12,7 @@ const About = ({ isLoading, setIsLoading }) => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
-  }, []);
+  }, [setIsLoading]);
   if (isLoading) return <Loading />;
   return (
     <div className="about">

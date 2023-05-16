@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Loading from "./Loading";
 
 const Portfolio = ({ isLoading, setIsLoading }) => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
