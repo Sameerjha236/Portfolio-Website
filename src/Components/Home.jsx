@@ -3,6 +3,7 @@ import Loading from "./Loading";
 import { NavLink } from "react-router-dom";
 import Sameer from ".././Assests/Sameer_Jha_Resume.pdf";
 import Typewriter from "typewriter-effect";
+// import profile from "../Assests/profile_full.JPEG";
 const Home = ({ isLoading, setIsLoading }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
