@@ -10,7 +10,7 @@ const Home = ({ isLoading, setIsLoading }) => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 600);
   }, [setIsLoading]);
   if (isLoading) return <Loading />;
   return (
