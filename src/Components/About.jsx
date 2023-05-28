@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoPython } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import profile from "../Assests/Profile_face.JPG";
 import Loading from "./Loading";
 const About = ({ isLoading, setIsLoading }) => {
@@ -22,6 +23,9 @@ const About = ({ isLoading, setIsLoading }) => {
       <div className="about-data">
         <div className="about-desc">
           <li>
+            <span className="list-icon">
+              <AiOutlineArrowRight />
+            </span>
             Hi there! My name is Sameer Jha and I'm a frontend developer who's
             passionate about creating awesome websites that people love to use.
             I've got a background in data science and competitive programming,
@@ -29,6 +33,9 @@ const About = ({ isLoading, setIsLoading }) => {
             creative solutions.
           </li>
           <li>
+            <span className="list-icon">
+              <AiOutlineArrowRight />
+            </span>
             When I'm not busy coding, you can usually find me exploring new
             technologies and frameworks. I love learning new things and
             experimenting with different tools to find the best way to bring
@@ -36,6 +43,9 @@ const About = ({ isLoading, setIsLoading }) => {
             got experience with Python, C++, and more.
           </li>
           <li>
+            <span className="list-icon">
+              <AiOutlineArrowRight />
+            </span>
             I believe that the best way to get things done is through
             collaboration and teamwork, and I'm always excited to work with
             other developers to build amazing things. So if you're looking for a
@@ -45,19 +55,25 @@ const About = ({ isLoading, setIsLoading }) => {
         </div>
         <div className="about-lang">
           <div className="lang">
-            <TbBrandCpp />
-            <p>C++</p>
-            <p>3+ Years</p>
+            <TbBrandCpp className="logo" />
+            <div>
+              <p>C++</p>
+              <p>3+ Years</p>
+            </div>
           </div>
           <div className="lang">
-            <IoLogoPython />
-            <p>Python</p>
-            <p>2+ Years</p>
+            <IoLogoPython className="logo" />
+            <div>
+              <p>Python</p>
+              <p>2+ Years</p>
+            </div>
           </div>
           <div className="lang">
-            <GrReactjs />
-            <p>React</p>
-            <p>1+ Years</p>
+            <GrReactjs className="logo" />
+            <div>
+              <p>React</p>
+              <p>1+ Years</p>
+            </div>
           </div>
         </div>
       </div>

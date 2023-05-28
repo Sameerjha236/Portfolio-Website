@@ -17,18 +17,6 @@ body {
   );
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    background-image: linear-gradient(
-      to top,
-      #aeecf3,
-      #82bdc4,
-      #589096,
-      #2f656b,
-      #003d43
-    );
-  }
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
