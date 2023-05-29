@@ -41,12 +41,19 @@ const Home = ({ isLoading, setIsLoading }) => {
               <a
                 href="https://www.instagram.com/sameerjha23/"
                 className="instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaInstagram />
               </a>
             </li>
             <li>
-              <a href="https://github.com/Sameerjha236" className="github">
+              <a
+                href="https://github.com/Sameerjha236"
+                className="github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
             </li>
