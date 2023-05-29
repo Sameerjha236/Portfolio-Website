@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiPython, SiMysql, SiExpress } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
-
-const Skills = () => {
+import Loading from "./Loading";
+const Skills = ({ isLoading, setIsLoading }) => {
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, [setIsLoading]);
+  if (isLoading) return <Loading />;
   return (
     <div className="skills">
       <div className="header">

@@ -42,11 +42,6 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" data-text="About">
-              <RxAvatar className="icon" />
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/contact" data-text="Contact">
               <FaEnvelope className="icon" />
             </NavLink>
