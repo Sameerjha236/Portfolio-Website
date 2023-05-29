@@ -429,11 +429,9 @@ h4 {
   justify-content: center;
   align-items: center;
   background: transparent;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-radius: 10px;
+  box-shadow: 1px 6px 12px 0 var(--comp1);
   border: 1px solid var(--comp1);
+  border-radius: 2rem;
   padding: 0.2rem;
   transition: var(--transition);
 }
@@ -523,5 +521,70 @@ h4 {
   }
   .Loading h3 {
     width: 80%;
+  }
+}
+
+/* ------------------------- Skills ---------------------------- */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  width: 25rem;
+  height: 30rem;
+  border: 2px var(--accent) solid;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  align-items: center;
+  box-shadow: 1px 6px 12px 0 var(--comp1);
+  transition: var(--transition);
+}
+.card:hover {
+  box-shadow: 0 0 10px 5px var(--accent);
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  width: 80%;
+  padding: 1rem;
+}
+.skills-list .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  color: var(--comp2);
+}
+.skills-list .item h4 {
+  font-size: 1.2rem;
+}
+.skills-list .item svg {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 20rem;
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    width: 20rem;
+    height: 26rem;
   }
 }
