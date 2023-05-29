@@ -17,6 +17,10 @@ const About = ({ isLoading, setIsLoading }) => {
   if (isLoading) return <Loading />;
   return (
     <div className="about">
+      <div className="header">
+        <h4>Get to Know</h4>
+        <h3>Me</h3>
+      </div>
       <div className="image-container">
         <img src={profile} alt="Sameer Jha" />
       </div>

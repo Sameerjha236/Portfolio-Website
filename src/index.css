@@ -7,14 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   height: 100%;
-  background-image: linear-gradient(
-    to left,
-    #aeecf3,
-    #82bdc4,
-    #589096,
-    #2f656b,
-    #003d43
-  );
+  background-color: #131212;
+  /* background-image: linear-gradient(
+    to right top,
+    #191825,
+    #232737,
+    #2c384a,
+    #334a5d,
+    #3b5c6f
+  ); */
+  /* background-image: linear-gradient(
+    to bottom,
+    #0a2647,
+    #003b5d,
+    #005271,
+    #006982,
+    #008090
+  ); */
 }
 
 code {

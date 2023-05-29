@@ -4,10 +4,10 @@
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-  --dom: #aeecf3;
-  --comp1: #00242a;
-  --comp2: #00c59d;
-  --accent: #c9c2e7;
+  --dom: #131212;
+  --comp1: #19a7ce;
+  --comp2: #83b2cb;
+  --accent: #a3d9de;
   --transition: all 0.3s ease-in-out;
   --webkit-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
   --moz-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
@@ -168,7 +168,7 @@ h4 {
   justify-content: center;
 }
 .home .hero h1 {
-  color: var(--comp2);
+  color: var(--comp1);
   font-weight: 800;
   font-style: italic;
   font-size: 4.5rem;
