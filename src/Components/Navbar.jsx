@@ -6,6 +6,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { HiRocketLaunch } from "react-icons/hi2";
 import { FaBars } from "react-icons/fa";
 import { Code } from "react-feather";
+import logo from "../Assests/Logo.jpeg";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const toggleLinks = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
     <nav className={`navbar ${showLinks ? "show" : ""}`}>
       <div className="nav-header">
         <NavLink to="/">
-          <p className="logo">Sameer Jha</p>
+          <img src={logo} alt="Sameer Jha" className="logo" />
         </NavLink>
         <FaBars className="nav-toggle" onClick={toggleLinks} />
       </div>
