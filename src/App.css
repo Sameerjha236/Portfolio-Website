@@ -95,12 +95,12 @@ h4 {
 }
 
 .icon {
-  color: var(--accent);
+  color: var(--comp1);
   transition: var(--transition);
   font-size: 1.2rem;
 }
 .icon:hover {
-  color: var(--dom);
+  color: var(--accent);
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +159,7 @@ h4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
-  margin-right: 2rem;
+  margin: 2rem 1rem;
 }
 .home .hero {
   padding: 1rem;
@@ -226,8 +226,9 @@ h4 {
 }
 .something {
   position: relative;
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  height: 80%;
+  max-width: 80%;
   overflow: hidden;
 }
 
@@ -241,7 +242,7 @@ h4 {
   background-image: url("../src/Assests/profile_full.JPEG");
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.6;
   border-radius: 10rem;
   margin-top: 1rem;
 }
@@ -273,9 +274,8 @@ h4 {
 .about {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
   margin-right: 2rem;
   color: var(--comp1);
 }
@@ -283,8 +283,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
   border-radius: 50%;
   border: solid 2px var(--accent);
@@ -327,7 +327,7 @@ h4 {
   justify-content: center;
   gap: 2rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 .lang {
   border: 2px var(--accent) solid;
@@ -338,12 +338,12 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
+  background: transparent;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--comp1);
   padding: 0.2rem;
   transition: var(--transition);
 }
@@ -355,6 +355,29 @@ h4 {
 }
 .lang p {
   font-size: 1.1rem;
+}
+.list-icon {
+  margin-right: 0.2rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+}
+.header h4 {
+  color: var(--comp2);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.header h3 {
+  color: var(--comp1);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 1000;
+  font-style: italic;
 }
 @media screen and (max-width: 768px) {
   .about {
@@ -377,12 +400,13 @@ h4 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .about {
     margin: 0;
     justify-content: center;
   }
   .about-lang {
-    width: 20rem;
+    margin-top: 1rem;
+    flex-direction: column;
   }
 }
