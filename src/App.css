@@ -162,6 +162,8 @@ h4 {
   margin: 2rem 1rem;
 }
 .home .hero {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   margin-top: 3rem;
   text-align: left;
@@ -188,6 +190,11 @@ h4 {
   font-size: 1.2rem;
   line-height: 2rem;
   letter-spacing: 1.2px;
+}
+.typo {
+  display: inline-block;
+  color: var(--comp1);
+  font-size: 1.5rem;
 }
 .btn-sect {
   display: flex;
@@ -227,7 +234,7 @@ h4 {
 
 .home .links-home {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
 
 .home .links-home ul {
@@ -281,6 +288,15 @@ h4 {
 .home .links-home a.github:hover {
   background-color: #ffffff;
   color: #24292e;
+}
+.home .links-home a.linkedin {
+  background-color: #0077b5;
+  color: #ffffff;
+}
+
+.home .links-home a.linkedin:hover {
+  background-color: #ffffff;
+  color: #0077b5;
 }
 
 @keyframes wiggle {
@@ -405,8 +421,8 @@ h4 {
 }
 .lang {
   border: 2px var(--accent) solid;
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   display: flex;
   padding: 0.1rem;
   flex-direction: column;
@@ -425,10 +441,10 @@ h4 {
   box-shadow: 0 0 10px 5px var(--accent);
 }
 .lang .logo {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .lang p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .list-icon {
   margin-right: 0.2rem;

@@ -5,6 +5,7 @@ import { RxAvatar } from "react-icons/rx";
 import { FaEnvelope } from "react-icons/fa";
 import { HiRocketLaunch } from "react-icons/hi2";
 import { FaBars } from "react-icons/fa";
+import { Code } from "react-feather";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const toggleLinks = () => {
@@ -31,8 +32,18 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/skills" data-text="Skills">
+              <Code className="icon" />
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/portfolio" data-text="Portfolio">
               <HiRocketLaunch className="icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" data-text="About">
+              <RxAvatar className="icon" />
             </NavLink>
           </li>
           <li>

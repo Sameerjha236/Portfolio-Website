@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Loading from "./Loading";
 import { NavLink } from "react-router-dom";
-import { FaInstagram, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Sameer from ".././Assests/Sameer_Jha_Resume.pdf";
 import Typewriter from "typewriter-effect";
 
@@ -13,40 +13,43 @@ const Home = ({ isLoading, setIsLoading }) => {
       setIsLoading(false);
     }, 800);
   }, [setIsLoading]);
-
   if (isLoading) return <Loading />;
 
   return (
     <div className="home">
       <div className="hero">
         <h4>Hello, I'm</h4>
-        <h1>
-          <Typewriter
-            className="typo"
-            options={{
-              strings: ["Sameer Jha"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h1>
+        <h1>Sameer Jha</h1>
         <p>
-          A Web Developer with a passion for creating exceptional websites that
-          deliver great user experiences. I'm always learning new skills and
-          technologies to improve my craft.
+          A{" "}
+          <span className="typo">
+            <Typewriter
+              options={{
+                strings: ["Frontend Developer", "Student"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
+          <p>
+            with a passion for creating exceptional websites that deliver great
+            user experiences. I'm always learning new skills and technologies to
+            improve my craft.
+          </p>
         </p>
         <div className="links-home">
           <ul>
             <li>
               <a
-                href="https://www.instagram.com/sameerjha23/"
-                className="instagram"
+                href="https://www.linkedin.com/in/sameer-jha/"
+                className="linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram />
+                <FaLinkedin />
               </a>
             </li>
+
             <li>
               <a
                 href="https://github.com/Sameerjha236"
@@ -55,6 +58,16 @@ const Home = ({ isLoading, setIsLoading }) => {
                 rel="noopener noreferrer"
               >
                 <FaGithub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/sameerjha23/"
+                className="instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
               </a>
             </li>
           </ul>
@@ -68,7 +81,7 @@ const Home = ({ isLoading, setIsLoading }) => {
           </NavLink>
         </div>
       </div>
-      <div className="something"></div>
+      {/* <div className="something"></div> */}
     </div>
   );
 };
