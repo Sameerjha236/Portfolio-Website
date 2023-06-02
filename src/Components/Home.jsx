@@ -25,7 +25,7 @@ const Home = ({ isLoading, setIsLoading }) => {
           <span className="typo">
             <Typewriter
               options={{
-                strings: ["Frontend Developer", "Student"],
+                strings: ["Frontend Developer", "Web Developer", "Student"],
                 autoStart: true,
                 loop: true,
               }}
