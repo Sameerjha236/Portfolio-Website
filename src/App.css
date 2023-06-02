@@ -660,3 +660,86 @@ h4 {
   font-size: 1.1rem;
   letter-spacing: 1px;
 }
+
+/* -----------------------Contact---------------------------------- */
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container {
+  width: 70%;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+.contact-options {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+.contact-option {
+  width: 14rem;
+  height: 14rem;
+  justify-content: center;
+  padding: 0.7rem;
+}
+.contact-option h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-option h5 {
+  font-size: 1.2rem;
+}
+.form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+.contact-option a {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.form .btn {
+  width: 10rem;
+  margin: 2rem auto;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--comp1);
+  resize: none;
+  color: var(--comp2);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+}
