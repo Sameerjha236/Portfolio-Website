@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-
 import { FaGithub } from "react-icons/fa";
 import Loading from "./Loading";
-
+import Car from "../Assests/Car.jpeg";
 const Portfolio = ({ isLoading, setIsLoading }) => {
   useEffect(() => {
     setIsLoading(true);
@@ -21,11 +20,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
       </div>
       <div className="card-section ">
         <div className="card">
-          <img
-            className="project-pic"
-            src="https://user-images.githubusercontent.com/90266216/218820683-2ea0b519-e82c-4533-98c1-686188d65264.png"
-            alt="Card 1"
-          />
+          <img className="project-pic" src={Car} alt="Card 1" />
           <div className="card-overlay">
             <h5>CarWale</h5>
             <p>

@@ -637,8 +637,7 @@ h4 {
   justify-content: center;
   opacity: 0;
   transition: var(--transition);
-  /* background-color: rgba(var(--dom), 0.1); */
-  backdrop-filter: blur(2px); /* Add backdrop-filter for the blur effect */
+  backdrop-filter: blur(2px);
 }
 
 .card:hover .card-overlay {
@@ -743,3 +742,5 @@ textarea {
 }
 @media screen and (max-width: 480px) {
 }
+
+/* ------------Error---------------------------------- */
