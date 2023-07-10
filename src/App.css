@@ -4,10 +4,10 @@
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-  --dom: #131212;
-  --comp1: #19a7ce;
-  --comp2: #83b2cb;
-  --accent: #a3d9de;
+  --dom: rgb(0, 28, 48);
+  --comp1: rgb(100, 204, 197);
+  --comp2: rgb(23, 107, 135);
+  --accent: rgb(218, 255, 251);
   --transition: all 0.3s ease-in-out;
   --webkit-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
   --moz-box-shadow-com: 0px 0px 105px 45px rgba(0, 61, 67, 0.9);
@@ -285,32 +285,30 @@ h4 {
 
 .home .links-home a.instagram {
   background-color: #e4405f;
-  color: #ffffff;
+  color: #faf4f4;
 }
 
 .home .links-home a.instagram:hover {
-  background-color: #ffffff;
+  background-color: #faf4f4;
   color: #e4405f;
 }
 
-.home .links-home a.github,
-.portfolio a {
+.github {
   background-color: #24292e;
-  color: #ffffff;
+  color: #faf4f4;
 }
 
-.home .links-home a.github:hover,
-.portfolio a {
-  background-color: #ffffff;
+.github:hover {
+  background-color: #faf4f4;
   color: #24292e;
 }
-.home .links-home a.linkedin {
+.linkedin {
   background-color: #0077b5;
-  color: #ffffff;
+  color: #faf4f4;
 }
 
-.home .links-home a.linkedin:hover {
-  background-color: #ffffff;
+.linkedin:hover {
+  background-color: #faf4f4;
   color: #0077b5;
 }
 
@@ -452,6 +450,8 @@ h4 {
 }
 .lang:hover {
   box-shadow: 0 0 10px 5px var(--accent);
+  color: var(--accent);
+  background-color: var(--comp2);
 }
 .lang .logo {
   font-size: 3.5rem;
@@ -468,6 +468,7 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 0rem;
+  margin-bottom: 3rem;
 }
 .header h4 {
   color: var(--comp2);
@@ -568,6 +569,11 @@ h4 {
 }
 .card:hover {
   box-shadow: 0 0 10px 5px var(--accent);
+  background-color: var(--comp2);
+}
+.card:hover h4,
+.card:hover svg {
+  color: rgb(218, 255, 251);
 }
 .skills-list {
   display: grid;
@@ -576,6 +582,7 @@ h4 {
   width: 80%;
   padding: 1rem;
 }
+
 .skills-list .item {
   display: flex;
   flex-direction: row;
@@ -660,6 +667,15 @@ h4 {
   letter-spacing: 1px;
 }
 
+.github {
+  background-color: #24292e;
+  color: #faf4f4;
+}
+
+.github:hover {
+  background-color: #faf4f4;
+  color: #24292e;
+}
 /* -----------------------Contact---------------------------------- */
 .contact {
   width: 100%;
@@ -744,3 +760,10 @@ textarea {
 }
 
 /* ------------Error---------------------------------- */
+.error {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
