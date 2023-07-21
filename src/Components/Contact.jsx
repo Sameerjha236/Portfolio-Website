@@ -23,6 +23,7 @@ const Contact = ({ isLoading, setIsLoading }) => {
       form.current,
       "azoSKxYbS9-_7Epo3"
     );
+    form.current.reset();
   };
 
   return (
