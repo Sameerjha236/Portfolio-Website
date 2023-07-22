@@ -413,17 +413,10 @@ h4 {
 }
 .about-desc {
   margin: 0.3rem 2rem;
-  & li {
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-style: italic;
-  }
-  & .list-icon {
-    margin-right: 0.2 rem;
-  }
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 .about-lang {
   display: flex;
@@ -651,20 +644,15 @@ h4 {
   opacity: 1;
 }
 
-.card-overlay h5 {
+.card-overlay h3 {
   font-size: 2rem;
   font-weight: 700;
   text-transform: capitalize;
-  color: var(--comp2);
+  color: black;
+  background-color: white;
 }
 .portfolio a {
   font-size: 5rem;
-}
-.card-overlay p {
-  text-align: center;
-  color: var(--comp2);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
 }
 
 .github {

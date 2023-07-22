@@ -22,11 +22,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
         <div className="card">
           <img className="project-pic" src={Car} alt="Card 1" />
           <div className="card-overlay">
-            <h5>CarWale</h5>
-            <p>
-              Carwale is a web app that offers personalized car recommendations
-              and price predictions to its users.
-            </p>
+            <h3>CarWale</h3>
             <a
               className="github"
               href="https://github.com/Sameerjha236/CarWale"
@@ -38,11 +34,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
         <div className="card">
           <img src="image2.jpg" className="project-pic" alt="Card 2" />
           <div className="card-overlay">
-            <h5>Portfolio Website</h5>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              sequi praesentium iste.
-            </p>
+            <h3>Portfolio Website</h3>
             <a
               className="github"
               href="https://github.com/Sameerjha236/CarWale"
