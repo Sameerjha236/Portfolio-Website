@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoPython } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import profile from "../Assests/Profile_face.JPG";
 import Loading from "./Loading";
 const About = ({ isLoading, setIsLoading }) => {
