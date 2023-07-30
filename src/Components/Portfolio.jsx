@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import Loading from "./Loading";
 import Car from "../Assests/Car.jpeg";
+import Port from "../Assests/Portfolio.jpeg";
 const Portfolio = ({ isLoading, setIsLoading }) => {
   useEffect(() => {
     setIsLoading(true);
@@ -32,7 +33,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
           </div>
         </div>
         <div className="card">
-          <img src="image2.jpg" className="project-pic" alt="Card 2" />
+          <img src={Port} className="project-pic" alt="Card 2" />
           <div className="card-overlay">
             <h3>Portfolio Website</h3>
             <a
