@@ -543,14 +543,18 @@ h4 {
 
 .card-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 4rem;
+}
+.pair {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5rem;
+  gap: 10rem;
 }
 .card {
   position: relative;
-  width: 25rem;
+  width: 100%;
+  max-width: 25rem;
   height: 30rem;
   border: 2px var(--accent) solid;
   display: flex;
@@ -560,9 +564,11 @@ h4 {
   box-shadow: 1px 6px 12px 0 var(--comp1);
   transition: var(--transition);
 }
+
 .card:hover {
   box-shadow: 0 0 10px 5px var(--accent);
   background-color: var(--comp2);
+  transform: scale(1.05);
 }
 .card:hover h4,
 .card:hover svg {
@@ -596,14 +602,20 @@ h4 {
     height: 28rem;
   }
   .card-section {
+    margin-top: -0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .pair {
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .card-section {
-    flex-direction: column;
-    gap: 2rem;
-  }
   .card {
     width: 20rem;
     height: 26rem;
