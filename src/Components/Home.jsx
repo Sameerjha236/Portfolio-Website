@@ -21,7 +21,7 @@ const Home = ({ isLoading, setIsLoading }) => {
       <div className="hero">
         <h4>Hello, I'm</h4>
         <h1>Sameer Jha</h1>
-        <p>
+        <p className="home-text">
           A{" "}
           <span className="typo">
             <Typewriter
@@ -32,7 +32,7 @@ const Home = ({ isLoading, setIsLoading }) => {
               }}
             />
           </span>
-          <p>
+          <p className="justify-text">
             with a passion for creating exceptional websites that deliver great
             user experiences. I'm always learning new skills and technologies to
             improve my craft.
@@ -82,7 +82,6 @@ const Home = ({ isLoading, setIsLoading }) => {
           </NavLink>
         </div>
       </div>
-      {/* <div className="something"></div> */}
     </div>
   );
 };

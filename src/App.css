@@ -162,10 +162,9 @@ h4 {
 }
 /* --------------- Home ------------------------ */
 .home {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   text-align: center;
-  margin: 2rem 1rem;
+  margin: 1rem;
 }
 .home .hero {
   display: flex;
@@ -174,9 +173,11 @@ h4 {
   margin-top: 3rem;
   text-align: left;
   justify-content: center;
+  gap: 1.5rem;
 }
 .home .hero h1 {
   color: var(--comp1);
+  margin: 0 auto;
   font-weight: 800;
   font-style: italic;
   font-size: 4.5rem;
@@ -184,6 +185,7 @@ h4 {
 }
 .home .hero h4 {
   font-weight: 600;
+  margin: 0 auto;
   font-style: italic;
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -195,16 +197,28 @@ h4 {
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 2rem;
+  margin: 0 auto;
   letter-spacing: 1.2px;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .typo {
   display: inline-block;
   color: var(--comp1);
   font-size: 1.5rem;
 }
+.justify-text {
+  text-align: center;
+}
+
 .btn-sect {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
 }
 .btn {
   padding: 1rem 2rem;
@@ -244,6 +258,8 @@ h4 {
 
 .home .links-home {
   text-align: center;
+  justify-items: center;
+  align-items: center;
   margin: 1rem 0;
 }
 
@@ -327,29 +343,6 @@ h4 {
   }
 }
 
-.something {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  max-width: 80%;
-  overflow: hidden;
-}
-
-.something::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../src/Assests/Avar.jpeg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  border-radius: 10rem;
-  margin-top: 1rem;
-}
-
 @media screen and (max-width: 768px) {
   .home {
     margin: 0px;
@@ -364,12 +357,19 @@ h4 {
   .btn {
     padding: 0.5rem 1.5rem;
   }
+  .btn-sect {
+    gap: 3rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .btn {
     padding: 0.2rem 1rem;
     font-size: 0.8rem;
     margin: 0.2rem;
+  }
+
+  .btn-sect {
+    gap: 0.5rem;
   }
 }
 
