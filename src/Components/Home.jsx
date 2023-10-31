@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Loading from "./Loading";
 import { NavLink } from "react-router-dom";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
-import Sameer from ".././Assests/Sameer_Jha_Resume.pdf";
+import Sameer from ".././Assests/Sameer.pdf";
 // import Avatar from "../Assests/Avar.jpeg";
 import Typewriter from "typewriter-effect";
 
