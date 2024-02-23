@@ -42,7 +42,7 @@ const Home = ({ isLoading, setIsLoading }) => {
           <ul>
             <li>
               <a
-                href="https://www.linkedin.com/in/sameer-jha/"
+                href="https://www.linkedin.com/in/sameer-jha-23m6y2002/"
                 className="linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
