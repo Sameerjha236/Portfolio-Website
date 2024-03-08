@@ -5,6 +5,7 @@ import Car from "../Assests/Car.jpeg";
 import Port from "../Assests/Portfolio.jpeg";
 import Stocks from "../Assests/stocks.png";
 import Flippy from "../Assests/flippy.jpg";
+import Book from "../Assests/Book.png";
 const Portfolio = ({ isLoading, setIsLoading }) => {
   useEffect(() => {
     setIsLoading(true);
@@ -22,56 +23,60 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
         <h3>Work</h3>
       </div>
       <div className="card-section ">
-        <div className="pair">
-          <div className="card">
-            <img className="project-pic" src={Flippy} alt="Card 1" />
-            <div className="card-overlay">
-              <h3>Flippy</h3>
-              <a
-                className="github"
-                href="https://github.com/Sameerjha236/Flippy"
-              >
-                <FaGithub />
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <img src={Stocks} className="project-pic" alt="Card 2" />
-            <div className="card-overlay">
-              <h3>Stock Dashboard</h3>
-              <a
-                className="github"
-                href="https://github.com/Sameerjha236/Stock-DashBoard"
-              >
-                <FaGithub />
-              </a>
-            </div>
+        <div className="card">
+          <img className="project-pic" src={Flippy} alt="Card 1" />
+          <div className="card-overlay">
+            <h3>Flippy</h3>
+            <a className="github" href="https://github.com/Sameerjha236/Flippy">
+              <FaGithub />
+            </a>
           </div>
         </div>
-        <div className="pair">
-          <div className="card">
-            <img className="project-pic" src={Car} alt="Card 3" />
-            <div className="card-overlay">
-              <h3>CarWale</h3>
-              <a
-                className="github"
-                href="https://github.com/Sameerjha236/CarWale"
-              >
-                <FaGithub />
-              </a>
-            </div>
+        <div className="card">
+          <img src={Stocks} className="project-pic" alt="Card 2" />
+          <div className="card-overlay">
+            <h3>Stock Dashboard</h3>
+            <a
+              className="github"
+              href="https://github.com/Sameerjha236/Stock-DashBoard"
+            >
+              <FaGithub />
+            </a>
           </div>
-          <div className="card">
-            <img src={Port} className="project-pic" alt="Card 4" />
-            <div className="card-overlay">
-              <h3>Portfolio Website</h3>
-              <a
-                className="github"
-                href="https://github.com/Sameerjha236/CarWale"
-              >
-                <FaGithub />
-              </a>
-            </div>
+        </div>
+        <div className="card">
+          <img className="project-pic" src={Book} alt="Card 3" />
+          <div className="card-overlay">
+            <h3>Book Browser</h3>
+            <a className="github" href="https://book-browser-fawn.vercel.app/">
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <img className="project-pic" src={Car} alt="Card 3" />
+          <div className="card-overlay">
+            <h3>CarWale</h3>
+            <a
+              className="github"
+              href="https://github.com/Sameerjha236/CarWale"
+            >
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <img src={Port} className="project-pic" alt="Card 4" />
+          <div className="card-overlay">
+            <h3>Portfolio Website</h3>
+            <a
+              className="github"
+              href="https://github.com/Sameerjha236/CarWale"
+            >
+              <FaGithub />
+            </a>
           </div>
         </div>
       </div>

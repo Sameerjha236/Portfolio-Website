@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
-import { SiPython, SiMysql, SiExpress } from "react-icons/si";
+import { SiPython, SiMysql, SiExpress, SiTailwindcss } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import Loading from "./Loading";
 const Skills = ({ isLoading, setIsLoading }) => {
@@ -23,24 +23,28 @@ const Skills = ({ isLoading, setIsLoading }) => {
             <h3>Frontend Development</h3>
             <div className="skills-list">
               <p className="item">
-                <FaHtml5 />
-                <h4>HTML</h4>
-              </p>
-              <p className="item">
-                <FaCss3 />
-                <h4>CSS</h4>
+                <FaReact />
+                <h4>React</h4>
               </p>
               <p className="item">
                 <FaJs />
                 <h4>JavaScript</h4>
               </p>
               <p className="item">
-                <FaReact />
-                <h4>React</h4>
-              </p>
-              <p className="item">
                 <FaBootstrap />
                 <h4>Bootstrap</h4>
+              </p>
+              <p className="item">
+                <SiTailwindcss />
+                <h4>Tailwind</h4>
+              </p>
+              <p className="item">
+                <FaHtml5 />
+                <h4>HTML</h4>
+              </p>
+              <p className="item">
+                <FaCss3 />
+                <h4>CSS</h4>
               </p>
             </div>
           </div>
