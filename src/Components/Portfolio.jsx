@@ -6,6 +6,7 @@ import Port from "../Assests/Portfolio.jpeg";
 import Stocks from "../Assests/stocks.png";
 import Flippy from "../Assests/flippy.jpg";
 import Book from "../Assests/Book.png";
+import Youtube from "../Assests/Youtube.png";
 const Portfolio = ({ isLoading, setIsLoading }) => {
   useEffect(() => {
     setIsLoading(true);
@@ -24,6 +25,19 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
       </div>
       <div className="card-section ">
         <div className="card">
+          <img className="project-pic" src={Youtube} alt="Card 1" />
+          <div className="card-overlay">
+            <h3>Youtube Clone</h3>
+            <a
+              className="github"
+              href="https://youtube-clone-flax-nine.vercel.app/"
+            >
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
           <img className="project-pic" src={Flippy} alt="Card 1" />
           <div className="card-overlay">
             <h3>Flippy</h3>
@@ -32,6 +46,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
             </a>
           </div>
         </div>
+
         <div className="card">
           <img src={Stocks} className="project-pic" alt="Card 2" />
           <div className="card-overlay">
@@ -44,6 +59,7 @@ const Portfolio = ({ isLoading, setIsLoading }) => {
             </a>
           </div>
         </div>
+
         <div className="card">
           <img className="project-pic" src={Book} alt="Card 3" />
           <div className="card-overlay">
